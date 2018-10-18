@@ -11,7 +11,7 @@ db = SQLAlchemy(app)
 
 class Entry(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(180))
+    title = db.Column(db.String(200))
     body = db.Column(db.String(1000))
     created = db.Column(db.DateTime)
 
