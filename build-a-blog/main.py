@@ -21,9 +21,6 @@ class Entry(db.Model):
         self.created = datetime.utcnow()
 
     def is_valid(self):
-        '''
-        Our naive validation just requires that everything be present.
-        '''
         if self.title and self.body and self.created:
             return True
         else:
